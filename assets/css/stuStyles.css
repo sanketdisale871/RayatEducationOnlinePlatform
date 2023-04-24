@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+    background: #E5E7EB;
+    position: relative;
+    display: flex;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    background-color: #111827;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#menu .logo{
+    padding: 30px 0 0 30px;
+}
+
+#menu .logo img{
+    width: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+#menu .logo h2{
+    color: #fff;
+}
+
+#menu .items{
+    margin-top: 40px;
+}
+
+#menu .items li{
+    list-style: none;
+    padding: 15px 0;
+}
+
+#menu .items li i{
+    color: rgb(134,141,151);
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+
+#menu .items li a{
+    text-decoration: none;
+    color: rgb(134,141,151);
+    font-weight:300px ;
+}
+
+#menu .items li:hover{
+    background: #253047;
+    cursor: pointer;
+    border-left: 3px solid white;
+}
+
+#menu .items li:hover i,
+#menu .items li:hover a{
+    color: #f3f4f6;
+    transition: 0.3s ease;
+}
+
+/* Navbar Part */
+
+#interface{
+    width: calc(100% - 300px);
+    margin-left: 300px;
+}
+
+#interface .navigation{
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 3px solid #594ef7;
+    background-color: #fff;
+    position: fixed;
+    width: calc(100% - 300px);
+}
+
+
+
+#menu-btn{
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #2b2b2b;
+    font-size: 20px;
+}
+
+
+#interface .schoolName h5{
+    text-align: center;
+    margin-left: 5rem;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#interface .profile img{
+    width: 2.78rem;
+    height:2.78rem;
+    /* object-fit: cover; */
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+#interface .profile i{
+    font-size: 20px;
+}
+
+
+#interface .profile{
+    margin-right: 1rem;
+}
+
+#interface .i-name{
+    padding: 2rem 1rem 1.5rem 3rem;
+    color: #444a53;
+    font-weight: 800;
+    margin-top: 70px;
+}
+
+.profileArea {
+    width: 92%;
+    /* border: 2px solid red; */
+    border-radius: 14px;
+    margin-left: 3rem;
+    padding: 0.7rem;
+    justify-content: flex-start;
+    background: #fff;
+}
+
+.profileArea .profileArea-left img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.profileArea .profileArea-right{
+    margin-left: 1.5rem;
+}
+
+.profileArea-right .pro_name span{
+    color: blue;
+    font-weight: 600;
+
+}
+
+.profileArea-right .reg_nu{
+    margin-top: 1rem;
+}
+
+.profileArea-right .reg_nu span{
+    color: blue;
+    font-weight: 600;
+}
+.profileArea-right .moNum span{
+    color: blue;
+    font-weight: 600;
+}
+.profileArea-right .mailId span{
+    color: blue;
+    font-weight: 600;
+}
+.profileArea-right .std span{
+    color: blue;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+

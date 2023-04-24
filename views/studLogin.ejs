@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/logiStyles.css" />
+  </head>
+  <body>
+    <div class="text-center center-div" id="login">
+      <div class="container border py-5" style="width: 32%;">
+        <div class="title pb-4">
+          <h2 class="font-weight-bold">Login System</h2>
+          <span>Log in for the registered Student</span>
+          <!-- <% if(locals.logout){ %> -->
+          <!-- <div class="alter alert-success text-center"><%= logout %></div>
+          <% } %> -->
+        </div>
+        <form action="/studlogin" method="POST" class="pt-0">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder=""
+              name="id"
+            />
+            <small class="form-text text-muted text-left"
+              >Register ID </small
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              placeholder="password"
+            />
+          </div>
+          <button type="submit" class="btn btn-success rounded-pill" style="padding-left: 5rem; padding-right: 5rem;">
+            Submit
+          </button>
+        </form>
+        <a href="/" >
+          <button type="submit" class="btn btn-success rounded-pill mt-3" style="padding-left: 3rem; padding-right: 3rem;padding-block: 0.5rem;">
+            Login as Admin
+          </button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

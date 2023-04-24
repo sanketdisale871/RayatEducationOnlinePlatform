@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESOP</title>
+
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+     <!-- Header -->
+     <header id="header">
+        <nav>
+
+            <!-- Flex Box -->
+            <div class="flex-nav">
+      
+              <!-- Logo -->
+              <a href="#" class="company-logo">
+                <img src="/img/rayatLogo1.png" alt="RayatLogo" class="logo" />
+              </a>
+      
+              <!-- Menu -->
+              <div class="nav-links" id="nav-links">
+      
+                <ul class="flex navLinksUpper">
+                  <!-- Section Links -->
+                  <li><a href="/home" class="hover-links"> HOME </a></li>
+                  <li><a href="#" class="hover-links">Assignment</a></li>
+                  <li><a href="/adminAtten" class="hover-links"><b>Attendence</b></a></li>
+                  <li><a href="#" class="hover-links">Quiz</a></li>
+                  <li><a href="/logout" class="hover-links">Log Out</a></li>
+                </ul>
+              </div>
+      
+             
+            </div>
+      
+          </nav>
+    </header>
+    <!-- Hearder End -->
+
+        <!-- Main Section -->
+        <main id="site-main">
+            <div class="container">
+                <!-- Form Handling -->
+                <form  method="POST">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Email
+                                </th>
+                                <th>
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(let i=0;i<users.length;i++){%>
+                                <tr>
+                                      <td>
+                                          <%= i+1%>
+                                      </td>
+                                      <td>
+                                          <%= users[i].name %>
+                                      </td>
+                                      <td>
+                                         <%= users[i].email %>
+                                      </td>
+                                      <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="Present" id="<%= users[i]._id %>">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                             Present
+                                            </label>
+                                          </div>
+                                      </td>
+                                  </tr>
+                              
+                              <%} %>
+                              
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-success rounded-pill text-end">
+                        Submit
+                      </button>
+                    </div>
+
+                </form>
+                
+            </div>
+        </main>
+            <!-- /Main Section -->
+
+    
+    
+
+    
+  </body>
+</html>
